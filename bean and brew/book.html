@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | Bean & Brew</title>
+    <meta name="description" content="Book a table at Bean & Brew for a meeting, work, or relaxation. Easy online form.">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Bean & Brew</a>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Events & Contact</a></li>
+            </ul>
+        </nav>
+        <a href="book.html" class="btn">Book a Table</a>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">Book a Table</h1>
+        <p style="text-align: center; margin-bottom: 2rem;">Planning a meeting or looking for a quiet place to work? Leave a request!</p>
+
+        <form action="#" method="POST" class="booking-form">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="John Smith">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="bookingDate">Date:</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingTime">Time (We are open 08:00 to 21:00):</label>
+                <input type="time" id="bookingTime" name="bookingTime" min="08:00" max="21:00" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Select number</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4+">4 or more (add to comments)</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%;">Confirm Booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bean & Brew. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
